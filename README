@@ -1,0 +1,3 @@
+The goal of Wtf is to be like the Hello, World! of webapps. Let's face it, 'Hello, World!' just isn't exciting enough when you learn about a new web framework and blogs are 'meh'. So I'm trying to turn what used to be simple camping app into an idea. Implement WTF in your favorite web framework or use it to learn a whole new framework.
+
+Wtf is not too ambitious though I understand your concern about its lust for power. Wtf simply asks for an acronym and returns its meaning. This came from Thomas Sutton's command line utility wtf[http://linux.die.net/man/6/wtf]
