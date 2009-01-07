@@ -17,4 +17,7 @@ get '/' do
   erb :index
 end
 
-
+get '/is/:acronym' do
+  @wtf = Wtf.get(params[:acronym])
+  erb :index
+end

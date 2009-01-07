@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>WTF</title>
-	<link rel="stylesheet" type="text/css" href="reset-fonts-grids.css">
+	<link rel="stylesheet" type="text/css" href="/reset-fonts-grids.css">
   <style>
     #doc3 {
       margin: auto;
@@ -30,6 +30,9 @@
 <div id="doc3">
    <div id="hd">WTF</div> 
    <div id="bd">
+     <% if @wtf %>
+       <div id="wtf"><%= "#{@wtf.acronym} means #{@wtf.definition}" %></div>
+     <% end %>
      <form method="POST" action="#">
        <p><input type="text" id="acronym" name="acronym"></p>
        <p><input type="submit" value="submit"></p>
