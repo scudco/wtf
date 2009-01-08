@@ -29,3 +29,14 @@ end
 get '/wtf/new' do
   erb :new
 end
+
+post '/wtf/new' do
+  params[:acronym].upcase!
+  wtf = Wtf.new(params)
+  if wtf.save 
+    redirect "/wtf/is/#{params[:acronym]}"
+  else
+    @error = "Look, this form is not that complicated. Just fill it out right and stop messing around."
+    erb :new
+  end
+end
