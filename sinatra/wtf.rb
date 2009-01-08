@@ -18,7 +18,7 @@ get '/' do
 end
 
 get '/wtf/is/:acronym' do
-  @wtf = Wtf.get(params[:acronym])
+  @wtf = Wtf.get(params[:acronym].downcase)
   erb :index
 end
 
