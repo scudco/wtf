@@ -12,6 +12,10 @@
       font-size: 317%;
       color: green;
     }
+    #hd a:link, #hd a:hover, #hd a:visited, #hd a:active {
+      text-decoration: none;
+      color: green;
+    }
     #bd {
       margin-top: 0.3847em;
       margin-bottom: 0.3847em;
@@ -28,7 +32,7 @@
 </head>
 <body>
 <div id="doc3">
-  <div id="hd">WTF</div> 
+  <div id="hd"><a href="/">WTF</a></div> 
   <div id="bd">
     <%= yield %>
   </div> 
