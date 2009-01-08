@@ -17,15 +17,15 @@ get '/' do
   erb :index
 end
 
-get '/is/:acronym' do
+get '/wtf/is/:acronym' do
   @wtf = Wtf.get(params[:acronym])
   erb :index
 end
 
-post '/is' do
-  redirect "/is/#{params[:acronym]}"
+post '/wtf/is' do
+  redirect "/wtf/is/#{params[:acronym]}"
 end
 
-get '/new' do
+get '/wtf/new' do
   erb :new
 end

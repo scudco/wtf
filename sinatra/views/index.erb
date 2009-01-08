@@ -1,7 +1,7 @@
 <% if @wtf %>
   <div id="wtf"><%= "#{@wtf.acronym} means #{@wtf.definition}" %></div>
 <% end %>
-<form method="POST" action="/is">
+<form method="POST" action="/wtf/is">
   <p><input type="text" id="acronym" name="acronym"></p>
   <p><input type="submit" value="submit"></p>
 </form>
