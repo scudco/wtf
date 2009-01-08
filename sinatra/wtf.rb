@@ -21,3 +21,11 @@ get '/is/:acronym' do
   @wtf = Wtf.get(params[:acronym])
   erb :index
 end
+
+post '/is' do
+  redirect "/is/#{params[:acronym]}"
+end
+
+get '/new' do
+  erb :new
+end
